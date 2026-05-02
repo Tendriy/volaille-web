@@ -19,8 +19,8 @@
 </template>
 
 <script>
-import LanguageSwitcher from './components/LanguageSwitcher.vue'
-import FloatingLanguageSwitcher from './components/FloatingLanguageSwitcher.vue'
+import LanguageSwitcher from './LanguageSwitcher.vue'
+import FloatingLanguageSwitcher from './FloatingLanguageSwitcher.vue'
 
 export default {
   components: {
