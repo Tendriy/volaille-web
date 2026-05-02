@@ -311,7 +311,7 @@
     <div class="table-card">
       <div class="card-header">
         <h2>📋 {{ $t('recent_lots') }}</h2>
-        <router-link to="/lots" class="btn-link">Voir tous →</router-link>
+        <router-link to="/app/lots" class="btn-link">Voir tous →</router-link>
       </div>
       <div class="table-responsive">
         <table class="table">
@@ -619,7 +619,7 @@ export default {
       if (!prix || prix === 0) return '0'
       return new Intl.NumberFormat('fr-FR').format(Math.round(parseFloat(prix)))
     },
-    voirLot(id) { this.$router.push(`/lots/${id}`) }
+    voirLot(id) { this.$router.push(`/app/lots/${id}`) }
   }
 }
 </script>

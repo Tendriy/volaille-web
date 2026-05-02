@@ -138,7 +138,7 @@ export default {
         })
         localStorage.setItem('token', response.data.token)
         localStorage.setItem('user', JSON.stringify(response.data.user))
-        this.$router.push('/dashboard')
+        this.$router.push('/app/dashboard')
       } catch (error) {
         if (error.response) {
           this.errorMessage = error.response.data.error || this.t('error')

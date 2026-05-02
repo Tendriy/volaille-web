@@ -4,7 +4,7 @@
     <!-- ===== HEADER ===== -->
     <div class="page-header">
       <div class="header-left">
-        <button class="btn-back" @click="$router.push('/lots')">← {{ $t('back') }}</button>
+        <button class="btn-back" @click="$router.push('/app/lots')">← {{ $t('back') }}</button>
         <div>
           <div class="page-eyebrow">📋 {{ $t('lot_details') }}</div>
           <h1 class="page-title">{{ lot.nom_lot }}</h1>

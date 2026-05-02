@@ -312,7 +312,7 @@ export default {
     },
     
     voirLot(id) { 
-      this.$router.push(`/lots/${id}`) 
+      this.$router.push(`/app/lots/${id}`) 
     },
     
     closeModal() {
