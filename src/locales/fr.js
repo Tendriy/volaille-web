@@ -1,19 +1,20 @@
 export default {
   // Navigation
-  app_name: 'Fiompiana vorona Nohatraraina',
+  app_name: 'VOLAILLE CONNECT',
   dashboard: 'Tableau de bord',
   lots: 'Lots',
   stock: 'Stock',
   vaccins: 'Vaccins',
   ventes: 'Ventes',
   logout: 'Déconnexion',
+  login: 'Se connecter',
+  register: "S'inscrire",
   
   // Page d'accueil - Hero
   welcome: 'Bienvenue',
   slogan: 'Simplifiez la gestion de votre ferme avicole',
   description: "L'application web qui remplace votre cahier papier par un outil numérique simple, accessible et hors-ligne.",
   start_free: 'Commencer gratuitement',
-  login: 'Se connecter',
   malagasy: 'Malagasy',
   available: 'Disponible',
   offline: 'Hors-ligne',
@@ -50,7 +51,7 @@ export default {
   dashboard_title: 'Tableau de bord',
   dashboard_desc: 'Une vision globale de votre ferme',
   
-  // Liste des solutions (pour les puces)
+  // Liste des solutions
   lot_name: 'Nom du lot',
   breed: 'Race',
   supplier: 'Fournisseur',
@@ -114,18 +115,27 @@ export default {
   copyright: '© 2026 VOLAILLE CONNECT - Projet SIO2 | ANDRIANINDRINA Herivelo Anissa - SE20240336',
   
   // Formulaires
-  username: 'Nom d\'utilisateur',
+  username: "Nom d'utilisateur",
   email: 'Email',
   password: 'Mot de passe',
   confirm_password: 'Confirmer le mot de passe',
   full_name: 'Nom complet',
   accept_terms: "J'accepte les conditions d'utilisation",
-  register: "S'inscrire",
   login_title: 'Connexion',
   login_subtitle: 'Accédez à votre compte',
   no_account: 'Pas encore de compte ?',
   create_account: 'Créer un compte',
   already_account: 'Déjà inscrit ?',
+  register_subtitle: 'Créez votre compte en quelques secondes',
+  password_min: 'Au moins 6 caractères',
+  password_min_error: 'Le mot de passe doit contenir au moins 6 caractères',
+  password_mismatch: 'Les mots de passe ne correspondent pas',
+  password_weak: 'Mot de passe faible',
+  password_medium: 'Mot de passe moyen',
+  password_strong: 'Mot de passe fort',
+  accept_terms_error: 'Vous devez accepter les conditions d\'utilisation',
+  register_success: 'Inscription réussie ! Vous pouvez maintenant vous connecter.',
+  server_error: 'Impossible de contacter le serveur. Vérifiez que le backend est démarré',
   
   // Lots
   status: 'Statut',
@@ -139,6 +149,9 @@ export default {
   delete_lot: 'Supprimer le lot',
   close_lot: 'Clôturer le lot',
   search_lot: 'Rechercher un lot',
+  remaining: 'Restant',
+  sold: 'Vendus',
+  dead: 'Morts',
   
   // Suivi quotidien
   daily_followup: 'Suivi quotidien',
@@ -151,12 +164,16 @@ export default {
   feed_type: "Type d'aliment",
   quantity: 'Quantité',
   unit: 'Unité',
-  alert_threshold: 'Seuil d\'alerte',
+  alert_threshold: "Seuil d'alerte",
   purchase_date: "Date d'achat",
   low_stock: 'Stock faible',
   normal: 'Normal',
   add_stock: 'Ajouter stock',
   edit_stock: 'Modifier stock',
+  select_feed: 'Sélectionner un aliment',
+  add_feed: 'Ajouter un aliment',
+  consumptions: 'Consommations',
+  consumption_details: 'Détails consommation',
   
   // Vaccins
   vaccine_type: 'Type de vaccin',
@@ -196,6 +213,14 @@ export default {
   view: 'Voir',
   edit: 'Modifier',
   delete: 'Supprimer',
+  back: 'Retour',
+  cancel: 'Annuler',
+  save: 'Enregistrer',
+  
+  // Graphiques
+  lots_distribution: 'Répartition des lots',
+  stock_status: 'État du stock',
+  total: 'Total',
   
   // Unités
   kg: 'kg',
@@ -205,30 +230,5 @@ export default {
   
   // LotDetail
   lot_details: 'Détail du lot',
-  back: 'Retour',
-  general_info: 'Informations générales',
-  cancel: 'Annuler',
-  save: 'Enregistrer',
-  
-  // Register
-  register_subtitle: 'Créez votre compte en quelques secondes',
-  password_min: 'Au moins 6 caractères',
-  password_min_error: 'Le mot de passe doit contenir au moins 6 caractères',
-  password_mismatch: 'Les mots de passe ne correspondent pas',
-  password_weak: 'Mot de passe faible',
-  password_medium: 'Mot de passe moyen',
-  password_strong: 'Mot de passe fort',
-  accept_terms_error: 'Vous devez accepter les conditions d\'utilisation',
-  register_success: 'Inscription réussie ! Vous pouvez maintenant vous connecter.',
-  server_error: 'Impossible de contacter le serveur. Vérifiez que le backend est démarré',
-  remaining: 'Restant',
-  sold: 'Vendus',
-  dead: 'Morts',
-  cancel: 'Annuler',
-  feed_type: "Type d'aliment",
-  select_feed: "Sélectionner un aliment",
-    consumptions: "Consommations",
-  consumption_details: "Détails consommation",
-  add_feed: "Ajouter un aliment",
-  select_feed: "Sélectionner un aliment",
+  general_info: 'Informations générales'
 }

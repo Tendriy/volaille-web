@@ -1,6 +1,6 @@
 <template>
   <div>
-    <nav  class="navbar">
+    <nav class="navbar">
       <div class="nav-container">
         <div class="nav-brand">🐔 {{ $t('app_name') }}</div>
         <div class="nav-links">
@@ -43,6 +43,10 @@ export default {
   padding: 15px;
   color: white;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
 }
 
 .nav-container {
@@ -77,6 +81,13 @@ export default {
   background: #34495e;
 }
 
+/* Style pour le lien actif */
+.nav-links a.router-link-active,
+.nav-links a.router-link-exact-active {
+  background: #e74c3c;
+  color: white;
+}
+
 .logout-btn {
   background: #e74c3c;
   color: white;
@@ -91,7 +102,28 @@ export default {
   background: #c0392b;
 }
 
+/* Animation lors du scroll */
+@keyframes stickySlideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.navbar {
+  animation: stickySlideDown 0.3s ease-out;
+}
+
+/* Responsive */
 @media (max-width: 768px) {
+  .navbar {
+    padding: 10px;
+  }
+  
   .nav-links {
     gap: 8px;
   }
@@ -106,6 +138,27 @@ export default {
   
   .nav-links .language-selector .dropdown-icon {
     display: none;
+  }
+  
+  .nav-brand {
+    font-size: 1rem;
+  }
+  
+  .logout-btn {
+    padding: 4px 10px;
+    font-size: 0.85rem;
+  }
+}
+
+/* Pour très petits écrans */
+@media (max-width: 600px) {
+  .nav-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .nav-links {
+    justify-content: center;
   }
 }
 </style>

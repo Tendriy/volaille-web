@@ -7,13 +7,14 @@ export default {
   vaccins: 'Vaksiny',
   ventes: 'Varotra',
   logout: 'Mivoaka',
+  login: 'Hiditra',
+  register: 'Hisoratra anarana',
   
   // Page d'accueil - Hero
   welcome: 'Tonga soa',
   slogan: 'Hanamora ny fitantanana ny toeram-piompiana akoho amam-borona',
   description: "Rindranasa izay manolo ny kahie natao an-taratasy amin'ny fitaovana nomerika mora ampiasaina sy azo idirana na dia tsy misy aterineto aza.",
   start_free: 'Manomboka maimaim-poana',
-  login: 'Hiditra',
   malagasy: 'Malagasy',
   available: 'Misy foana',
   offline: 'Tsy mila Internet',
@@ -50,11 +51,11 @@ export default {
   dashboard_title: 'Tabilao',
   dashboard_desc: 'Fijerena ny toeram-piompinao manontolo',
   
-  // Liste des solutions (pour les puces)
+  // Liste des solutions
   lot_name: 'Anaran\'andiany',
   breed: 'Karazana',
   supplier: 'Mpamatsy',
-  initial_number: 'Isany voalohany',
+  initial_number: 'Isa voalohany',
   arrival_date: 'Daty nahatongavana',
   temperature: 'Maripana',
   consumption: 'Fihinanana',
@@ -120,12 +121,21 @@ export default {
   confirm_password: 'Hamafiso ny tenimiafina',
   full_name: 'Anarana feno',
   accept_terms: 'Ekeiko ny fepetra fampiasana',
-  register: 'Hisoratra anarana',
   login_title: 'Hiditra',
   login_subtitle: 'Midira ao amin\'ny kaontinao',
   no_account: 'Mbola tsy manana kaonty ?',
   create_account: 'Mamorona kaonty',
   already_account: 'Efa manana kaonty ?',
+  register_subtitle: 'Mamorona kaonty ao anatin\'ny segondra vitsivitsy',
+  password_min: 'Farafahakeliny 6 tarehintsoratra',
+  password_min_error: 'Ny tenimiafina dia tsy maintsy misy farafahakeliny 6 tarehintsoratra',
+  password_mismatch: 'Tsy mitovy ny tenimiafina',
+  password_weak: 'Tenimiafina malemy',
+  password_medium: 'Tenimiafina antonony',
+  password_strong: 'Tenimiafina matanjaka',
+  accept_terms_error: 'Tsy maintsy ekena ny fepetra fampiasana',
+  register_success: 'Vita ny fisoratana anarana ! Azonao atao ny miditra izao.',
+  server_error: 'Tsy afaka mifandray amin\'ny serveur. Jereo fa mandeha ny backend',
   
   // Lots
   status: 'Toe-javatra',
@@ -139,6 +149,9 @@ export default {
   delete_lot: 'Hamafa andiany',
   close_lot: 'Hamarana andiany',
   search_lot: 'Hikaroka andiany',
+  remaining: 'Sisa',
+  sold: 'Efa namidy',
+  dead: 'Maty',
   
   // Suivi quotidien
   daily_followup: 'Fanaraha-maso isan\'andro',
@@ -157,6 +170,10 @@ export default {
   normal: 'Ampy',
   add_stock: 'Hanampy fitehirizana',
   edit_stock: 'Hanova fitehirizana',
+  select_feed: 'Mifidy sakafo',
+  add_feed: 'Hanampy sakafo',
+  consumptions: 'Fihinanana',
+  consumption_details: 'Antsipirihan\'ny fihinanana',
   
   // Vaccins
   vaccine_type: 'Karazan-tsakafo',
@@ -196,6 +213,14 @@ export default {
   view: 'Hijery',
   edit: 'Hanova',
   delete: 'Hamafa',
+  back: 'Miverina',
+  cancel: 'Ampio',
+  save: 'Tehirizina',
+  
+  // Graphiques
+  lots_distribution: 'Fizaràna andiany',
+  stock_status: 'Toetran\'ny fitehirizana',
+  total: 'Totaly',
   
   // Unités
   kg: 'kg',
@@ -205,30 +230,5 @@ export default {
   
   // LotDetail
   lot_details: 'Antsipirihan\'ny andiany',
-  back: 'Miverina',
-  general_info: 'Fampahalalana ankapobeny',
-  cancel: 'Ampio',
-  save: 'Tehirizina',
-  
-  // Register
-  register_subtitle: 'Mamorona kaonty ao anatin\'ny segondra vitsivitsy',
-  password_min: 'Farafahakeliny 6 tarehintsoratra',
-  password_min_error: 'Ny tenimiafina dia tsy maintsy misy farafahakeliny 6 tarehintsoratra',
-  password_mismatch: 'Tsy mitovy ny tenimiafina',
-  password_weak: 'Tenimiafina malemy',
-  password_medium: 'Tenimiafina antonony',
-  password_strong: 'Tenimiafina matanjaka',
-  accept_terms_error: 'Tsy maintsy ekena ny fepetra fampiasana',
-  register_success: 'Vita ny fisoratana anarana ! Azonao atao ny miditra izao.',
-  server_error: 'Tsy afaka mifandray amin\'ny serveur. Jereo fa mandeha ny backend',
-  remaining: 'Sisa',
-  sold: 'Efa namidy',
-  dead: 'Maty',
-  cancel: 'Ampio',
-  feed_type: "Karazan-tsakafo",
-  select_feed: "Mifidy sakafo",
-    consumptions: "Fihinanana",
-  consumption_details: "Antsipirihan'ny fihinanana",
-  add_feed: "Hanampy sakafo",
-  select_feed: "Mifidy sakafo",
+  general_info: 'Fampahalalana ankapobeny'
 }

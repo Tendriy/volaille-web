@@ -1,11 +1,11 @@
 <template>
   <div>
     <router-view />
-    <FloatingLanguageSwitcher />
+    <!-- <FloatingLanguageSwitcher /> -->
   </div>
 </template>
 
-<script>
+<!-- <script>
 import FloatingLanguageSwitcher from './components/FloatingLanguageSwitcher.vue'
 
 export default {
@@ -13,7 +13,7 @@ export default {
     FloatingLanguageSwitcher
   },
 }
-</script>
+</script> -->
 
 <style>
 * {

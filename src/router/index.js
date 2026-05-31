@@ -83,22 +83,24 @@ const router = createRouter({
   routes
 })
 
-router.beforeEach((to, from, next) => {
+// Correction ici : plus de paramètre 'next', on retourne directement les valeurs
+router.beforeEach((to, from) => {
   const requiresAuth = to.matched.some(record => record.meta.requiresAuth)
   const token = localStorage.getItem('token')
   
   if (requiresAuth && !token) {
-    next({ 
+    // Rediriger vers Login
+    return { 
       name: 'Login',
       query: { redirect: to.fullPath } 
-    })
+    }
   } 
   else if ((to.name === 'Login' || to.name === 'Register') && token) {
-    next({ name: 'Dashboard' }) 
+    // Rediriger vers Dashboard si déjà connecté
+    return { name: 'Dashboard' }
   }
-  else {
-    next()
-  }
+  // Autoriser la navigation
+  return true
 })
 
 export default router
